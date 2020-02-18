@@ -1,6 +1,13 @@
-# Express Backend Setup
+# Shaun Wassell's React: Creating and Hosting a Full-Stack Site 
+This repo is the result of following the course.
 
-## Initialize the project
+<br>
+<br>
+<br>
+
+# Express Back-End Setup
+
+### Initialize the project
 ```node 
 npm init -y
 ```
