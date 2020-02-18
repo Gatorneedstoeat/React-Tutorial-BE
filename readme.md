@@ -34,3 +34,11 @@ Add the following to the `.babelrc` file:
 npm install --save body-parser
 ```
 
+### Add nodemon to update the server on every save
+```node
+npm install --save-dev nodemon
+```
+Now run the following command:
+```node
+npx nodemon --exec npx babel-node src/server.js
+```
