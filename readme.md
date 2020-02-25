@@ -42,3 +42,22 @@ Now run the following command:
 ```node
 npx nodemon --exec npx babel-node src/server.js
 ```
+
+### deployment
+Put your compiled static assest in the `src` folder and add the following to the `server.js` file:
+
+
+```javascript
+//add the following to import
+import path from 'path';
+//add just below const app = express();
+app.use(express.static(path.join(__dirname, '/build')))
+```
+
+```javascript
+//add as the last api route
+//this will serve the static files
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname + '/build/index.html'));
+})
+```
